@@ -38,17 +38,17 @@ const projects = [
         likes: Math.floor(Math.random() * 100),
         // Random genereren van aantal views
         views: Math.floor(Math.random() * 200 + 100),
-        created: new Date(1593512447000).toUTCString(),
-        modified: new Date(1593512447000).toUTCString(),
+        created: new Date(1591988394000).toUTCString(),
+        modified: new Date(1591988695000).toUTCString(),
             // Assets = array van objecten
             assets: [   
             {
-                title: 'TRUNGNGUYENCOFFEE | Video 001',
-                type: 'image',
+                title: 'EVENTAPP GHENT | Video 001',
+                type: 'video',
                 thumbnailUrl: 'https://youtu.be/37RftxZzauU',
             },
             {
-                title: 'TRUNGNGUYENCOFFEE | Image 001',
+                title: 'EVENTAPP GHENT | Image 001',
                 type: 'image',
                 thumbnailUrl: 'https://dl.airtable.com/.attachments/5454f511c27548ec3418590ebee4fe04/ade0fdee/EventApp.png',
             }]
@@ -62,18 +62,18 @@ function showProjectsInConsole(projects)
     projects.forEach((p, index) => {
     tempstr += 
 `=====================================================================================================================================
-project ${index + 1}: \t ${p.title ? p.title : '\t'} 
+project ${index + 1}: \t ${p.title} 
 =====================================================================================================================================
-synopsis: \t ${p.synopsis ? p.synopsis : '\t'}
-thumbnail: \t ${p.thumbnailUrl ? p.thumbnailUrl : '\t'}
-Likes: \t \t ${p.likes ? p.likes : '\t'}
-Views: \t \t ${p.views ? p.views : '\t'}
-Created at: \t ${p.created ? p.created : '\t'}
-Modified at: \t ${p.modified ? p.modified : '\t'}
+synopsis: \t ${p.synopsis}
+thumbnail: \t ${p.thumbnailUrl}
+Likes: \t \t ${p.likes}
+Views: \t \t ${p.views}
+Created at: \t ${p.created}
+Modified at: \t ${p.modified}
 ------------------------------------------------------------------------------------------------------------------------------------
 ASSETS
 ------------------------------------------------------------------------------------------------------------------------------------
-${getStringForAssets(projects)}
+${getStringForAssets(p.assets) }
 `
     });
     return tempstr;
@@ -82,9 +82,8 @@ ${getStringForAssets(projects)}
 // Create a function to show assets in the message
 function getStringForAssets (assets){
     let tempstr = '';
-    assets.forEach((a, index) => {  // $variabele = [voorwaarde] ? [true] : [false]; (verkorte notatie van if else (2x))
-        tempstr += `Asset ${index + 1}: \t ${a.title ? a.title : '\t'} (type: ${a.type}) ${index < assets.length - 1 ? '' : ''}
-        \t ${a.thumbnailUrl} ${index < assets.length - 1 ? '\n' : ''}
+    assets.forEach((a, index) => {  
+        tempstr += `Asset ${index + 1}: \t ${a.title} (type: ${a.type}) \t ${a.thumbnailUrl} 
 `;  
     });
     return tempstr;
