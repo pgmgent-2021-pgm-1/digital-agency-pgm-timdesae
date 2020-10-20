@@ -1,6 +1,8 @@
-# Digitzl agency
+# Digital agency
 
-GitHub Tutorial - Aanmaak van mijn eerste opdracht
+Aanmaak van mijn eerste opdracht: Digital agency 
+Student: Tim De Saeger
+
 
 **GRADUAAT PROGRAMMEREN ARTEVELDEHOGESCHOOL**
 We :heart: **Programming** :thumbsup: **Graphics** make **Cool** :poop:

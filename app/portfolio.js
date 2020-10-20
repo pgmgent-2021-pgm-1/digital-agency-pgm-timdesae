@@ -9,8 +9,8 @@ const project = {
     likes: Math.floor(Math.random() * 100),
     // Random genereren van aantal views
     views: Math.floor(Math.random() * 200 + 100),
-    created: 0,
-    modified: 0,
+    created: new Date(1593512447000).toUTCString(),
+    modified: new Date(1593512447000).toUTCString(),
     // Assets = array van objecten
     assets: [   
         {
@@ -43,6 +43,7 @@ function getStringForAssets (assets){
     return tempstr;
 }
 
+// Convert epoch time to readable date
 
 
 // Create a message
@@ -57,8 +58,8 @@ Synopsis: \t ${project.synopsis}
 Thumbnail:  \t ${project.thumbnailUrl}
 Likes:  \t ${project.likes}
 Views:  \t ${project.views}
-Created at:  
-Modified at:
+Created at:  \t ${project.created}
+Modified at: \t ${project.modified}
 -------------------------------------------------------------------------------------------------------------------------------------
 ASSETS
 -------------------------------------------------------------------------------------------------------------------------------------
