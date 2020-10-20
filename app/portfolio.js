@@ -83,7 +83,7 @@ ${getStringForAssets(p.assets) }
 function getStringForAssets (assets){
     let tempstr = '';
     assets.forEach((a, index) => {  
-        tempstr += `Asset ${index + 1}: \t ${a.title} (type: ${a.type}) \t ${a.thumbnailUrl} 
+        tempstr += `Asset ${index + 1}: \t ${a.title} (type: ${a.type}) \n \t\t ${a.thumbnailUrl} 
 `;  
     });
     return tempstr;
