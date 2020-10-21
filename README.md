@@ -1,8 +1,10 @@
 # Digital agency
 
-Aanmaak van mijn eerste opdracht: Digital agency 
-Student: Tim De Saeger
+Digital agency - Aanmaak van eerste opdracht: digital agency
 
-
-**GRADUAAT PROGRAMMEREN ARTEVELDEHOGESCHOOL**
-We :heart: **Programming** :thumbsup: **Graphics** make **Cool** :poop:
+|           |                                |
+| --------- | ------------------------------ |
+| Firstname | Tim                            |
+| Lastname  | De Saeger                      |
+| Gender    | :male_sign:                    |
+| Email     | tim.desaeger@arteveldehs.be    |
