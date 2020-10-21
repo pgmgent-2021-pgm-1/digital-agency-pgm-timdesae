@@ -11,7 +11,7 @@ const projects = [
         // Random genereren van aantal views
         views: Math.floor(Math.random() * 200 + 100),
         created: new Date(1593512447000).toUTCString(),
-        modified: new Date(1593512447000).toUTCString(),
+        modified: new Date(1593516747000).toUTCString(),
             // Assets = array van objecten
             assets: [   
             {
@@ -38,8 +38,8 @@ const projects = [
         likes: Math.floor(Math.random() * 100),
         // Random genereren van aantal views
         views: Math.floor(Math.random() * 200 + 100),
-        created: new Date(1591988394000).toUTCString(),
-        modified: new Date(1591988695000).toUTCString(),
+        created: new Date(1591195234000).toUTCString(),
+        modified: new Date(1591519157000).toUTCString(),
             // Assets = array van objecten
             assets: [   
             {

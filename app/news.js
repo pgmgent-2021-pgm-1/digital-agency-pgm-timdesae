@@ -7,8 +7,8 @@ const posts = [
         synopsis: 'Geert, voormalig drummer bij Gorky, is een ‘gevoelsmens’. Zijn invalshoek bij het maken van de concertfoto’s, \n\t\t meer bepaald het sub-thema rockfotografie, is het gevoel van passie, geluk, concentratie en overgave dat \n \t\t muziekartiesten ervaren op een podium.',
         body: '“Mijn voorkeur gaat daarbij uit naar zwart-wit foto’s omdat je meer de nadruk kan leggen op het onderwerp”, \n \t\t vertelt Geert. De foto’s zijn getrokken over een tijdsspanne van vijf jaar. In de tentoonstelling zien we onder \n \t\t andere Luc De Vos en Raymond van het Groenewoud passeren. Deze tentoonstelling moet studenten Grafische en \n \t\t Digitale Media inspireren en stimuleren om zelf hun creatieve blik te verruimen.',
         thumbnail: 'https://dl.airtable.com/.attachments/ce0470435c01a2a03365cacb5f70def2/fc368b51/IMG_0521.JPG',
-        created: new Date(1593512447000).toUTCString(),
-        modified: new Date(1593512447000).toUTCString(),
+        created: new Date(1590072034000).toUTCString(),
+        modified: new Date(1590504836050).toUTCString(),
         authors: [
         {
             firstName: 'Lisa',
@@ -31,11 +31,11 @@ const posts = [
         },
         {
             nickName: '3raser',
-            message: 'AMD doet goede zaken op alle gebieden zo lijkt het. Fascinerend dat een grote speler als Intel momenteel een soort tweederangs lijkt te zijn.',
+            message: 'AMD doet goede zaken op alle gebieden zo lijkt het. Fascinerend dat een grote speler als Intel momenteel een soort tweederangs \n  lijkt te zijn.',
             commentOnComment: [
             {
                 nickName: 'FreVDP',
-                message: 'Intel is dan ook gestopt met innoveren omdat ze de x86 markt zo goed als alleen in handen hadden. Laten we van geluk spreken dat AMD weer helemaal mee is.'
+                message: 'Intel is dan ook gestopt met innoveren omdat ze de x86 markt zo goed als alleen in handen hadden. Laten we van geluk spreken \n\t  dat AMD weer helemaal mee is.'
             }]
         }]
     },
@@ -44,8 +44,8 @@ const posts = [
         synopsis: '8 Landen, 8 scholen, 36 studenten, 16 docenten, 9 coördinatoren: de eerste werkweek van het project Creative Skills 21 \n\t\t (Erasmus+) ging vorige week in Gent van start. Het project heeft als doel docenten binnen creatieve opleidingen op \n\t\t te leiden om efficiënter 21st century skills over te brengen bij hun studenten. 21st century skills gaan over soft \n\t\t skills; niet de technische vaardigheden, maar zaken zoals creativiteit, samenwerking, communicatieve vaardigheden \n\t\t en oplossingsgericht denken.',
         body: 'Zowel studenten als docenten volgden een workshop Human-Centered Design, waarbij op een praktische manier de principes \n\t\t van design thinking werden meegegeven. Problemen vinden en oplossen als een designer dus. De studenten zouden de rest \n\t\t van de week in groepen werken aan een eigen design challenge, waarbij ze gecoacht werden door de docenten. Iedere groep \n\t\t bestond uit 4 of 5 studenten en 2 docenten/coaches, elk uit een ander land. Ook werden de creative disciplines gemixt. \n\n\t\t Studenten en docenten met achtergronden in grafisch ontwerp, fotografie, videoproductie, animatie, interactieve media, \n\t\t app development, muziekproductie en zelfs interieurdesign zaten door elkaar. De challenge had te maken met een van de \n\t\t VN Sustainable Development Goals: "Inspire young people with meaningful behaviour change towards a sustainable lifestyle."',
         thumbnail: 'https://dl.airtable.com/.attachments/1f0f9c5f37e20e0a5b42e7146c9d0a23/3ae0aa52/2019_11_29_day_05_DSF7405.jpg',
-        created: new Date(1593512447000).toUTCString(),
-        modified: new Date(1593512447000).toUTCString(),
+        created: new Date(1591195234000).toUTCString(),
+        modified: new Date(1591519157000).toUTCString(),
         authors: [
         {
             firstName: 'Sander',
@@ -77,12 +77,12 @@ const posts = [
             }]
         },
         {
-            nickName: 'Agnewkes',
-            message: 'Alex gaat naar de cinema',
+            nickName: 'Kusanagi',
+            message: "Eigenlijk best zonde en een beetje oneervol om iemand zijn bekende werk zo'n slechte naam te geven. Al is het niet meer eigendom \n  van die persoon.",
             commentOnComment: [
             {
-                message: 'Diene stoemen Antwerpenaar versta ik tenminste',
-                nickName: 'fifaghost'
+                message: 'Daarom is het altijd heel belangrijk om te kijken aan wie je iets verkoopt. Ook na verkoop kun je nog imagoschade oplopen, \n \t  al is het alleen maar omdat je de koper niet voldoende doorgelicht hebt.',
+                nickName: 'Yggdrasil'
             }]
         }]
     },
@@ -103,13 +103,13 @@ body: \t\t ${p.body}
 thumbnail: \t ${p.thumbnail}
 Created at: \t ${p.created}
 Modified at: \t ${p.modified}
------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 AUTHORS
------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 ${getStringForAuthors(p.authors)}
------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 COMMENTS
------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 ${getStringForComments(p.comments)}
 `
     });
