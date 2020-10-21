@@ -22,19 +22,21 @@ const posts = [
         }],
         comments: [
         {
-            nickName: 'Ghostbusters fan',
-            message: 'The ghostbusterds are not real!',
+            nickName: 'sporza',
+            message: 'Belgie gaat nooit wereldkampioen worden',
             commentOnComment: [
-            {
-                message: 'This is a comment on a comment'
+            {   
+                nickName: 'Eden Hazard',
+                message: 'Pas toch maar op als ik terug ben kan alles'
             }]
         },
         {
-            nickName: 'Karen',
-            message: 'K3 is the best (the old one)',
+            nickName: 'josje',
+            message: 'K3 was niets zonder mij',
             commentOnComment: [
             {
-                message: 'This is a comment on a comment'
+                nickName: 'Karen Daemen',
+                message: 'K3 is the best (the old one)'
             }]
         }]
     },
@@ -62,7 +64,8 @@ const posts = [
             message: 'a long message',
             commentOnComment: [
             {
-                message: 'You suck in fifa'
+                message: 'You suck in fifa',
+                nickName: 'fifaghost',
             }]
         },
         {
@@ -70,7 +73,8 @@ const posts = [
             message: 'Alex gaat naar de cinema',
             commentOnComment: [
             {
-                message: 'Diene stoemen Antwerpenaar versta ik tenminste'
+                message: 'Diene stoemen Antwerpenaar versta ik tenminste',
+                nickName: 'fifaghost'
             }]
         }]
     },
@@ -120,7 +124,19 @@ function getStringForAuthors (authors){
 function getStringForComments (comments){
     let tempstr = '';
     comments.forEach((a, index) => {  
-        tempstr += `* ${a.message}  \n  written by:${a.nickName} \n`;  
+        tempstr += `* ${a.message}  \n  written by:${a.nickName}
+        ${getStringForCommentOnComment(a.commentOnComment)}
+`;  
+    });
+    return tempstr;
+}
+
+
+// Create a function to comment on a comment
+function getStringForCommentOnComment (commentOnComment){
+    let tempstr = '';
+    commentOnComment.forEach((c, index) => {  
+        tempstr += `* ${c.message}  \n \t  written by:${c.nickName}`;  
     });
     return tempstr;
 }
