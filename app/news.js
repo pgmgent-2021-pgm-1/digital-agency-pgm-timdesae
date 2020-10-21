@@ -22,16 +22,16 @@ const posts = [
         }],
         comments: [
         {
-            nickName: 'Ghostbusters',
-            message: 'a ling message',
+            nickName: 'Ghostbusters fan',
+            message: 'The ghostbusterds are not real!',
             commentOnComment: [
             {
                 message: 'This is a comment on a comment'
             }]
         },
         {
-            nickName: 'Ghostbusters',
-            message: 'a ling message',
+            nickName: 'Karen',
+            message: 'K3 is the best (the old one)',
             commentOnComment: [
             {
                 message: 'This is a comment on a comment'
@@ -95,6 +95,10 @@ Modified at: \t ${p.modified}
 AUTHORS
 ------------------------------------------------------------------------------------------------------------------------------------
 ${getStringForAuthors(p.authors)}
+------------------------------------------------------------------------------------------------------------------------------------
+COMMENTS
+------------------------------------------------------------------------------------------------------------------------------------
+${getStringForComments(p.comments)}
 `
     });
     return tempstr;
@@ -107,6 +111,16 @@ function getStringForAuthors (authors){
     authors.forEach((a, index) => {  
         tempstr += `Author ${index + 1}: \t ${a.firstName} ${a.lastName} \n \t\t ${a.thumbnailUrl} 
 `;  
+    });
+    return tempstr;
+}
+
+
+// Create a function to show comments in the message
+function getStringForComments (comments){
+    let tempstr = '';
+    comments.forEach((a, index) => {  
+        tempstr += `* ${a.message}  \n  written by:${a.nickName} \n`;  
     });
     return tempstr;
 }
